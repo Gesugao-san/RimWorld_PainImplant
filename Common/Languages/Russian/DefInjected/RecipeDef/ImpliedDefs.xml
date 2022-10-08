@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: сделать простой протез ноги -->
+  <Make_PainImplant.label>изготовить болевой имплант</Make_PainImplant.label>
+  <!-- EN: Сделать простой протез ноги -->
+  <Make_PainImplant.description>Изготовить болевой имплант.</Make_PainImplant.description>
+  <!-- EN: Делает простой протез ноги -->
+  <Make_PainImplant.jobString>Изготавливает болевой имплант</Make_PainImplant.jobString>
+
+</LanguageData>

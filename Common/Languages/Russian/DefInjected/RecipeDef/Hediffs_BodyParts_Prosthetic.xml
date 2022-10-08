@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: install Pain Implant -->
+  <InstallPainImplant.label>установить болевой имплант</InstallPainImplant.label>
+  <!-- EN: Install a Pain Implant. -->
+  <InstallPainImplant.description>Установить болевой имплант.</InstallPainImplant.description>
+  <!-- EN: Installing Pain Implant. -->
+  <InstallPainImplant.jobString>установить болевой имплант</InstallPainImplant.jobString>
+
+  <!-- EN: remove Pain Implant -->
+  <InstallPainImplant.label>удалить болевой имплант</InstallPainImplant.label>
+  <!-- EN: Remove the Pain Implant. -->
+  <InstallPainImplant.description>Удалить болевой имплант.</InstallPainImplant.description>
+  <!-- EN: Removing Pain Implant. -->
+  <InstallPainImplant.jobString>Удаляет болевой имплант</InstallPainImplant.jobString>
+
+</LanguageData>

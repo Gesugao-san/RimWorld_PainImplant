@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- <ThingDef Name="BodyPartBase" Abstract="True"> -->
+  <ThingDef Name="GesuBodyPartBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isTechHediff>true</isTechHediff>
+    <pathCost>14</pathCost>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <Beauty>-4</Beauty>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Mass>1</Mass>
+    </statBases>
+    <tradeTags>
+      <li>TechHediff</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+
+  <!-- Bases: Prosthetic body part (industrial tech) -->
+
+  <!-- <ThingDef Name="BodyPartProstheticBase" ParentName="BodyPartBase" Abstract="True"> -->
+  <ThingDef Name="GesuBodyPartProstheticBase" ParentName="GesuBodyPartBase" Abstract="True">
+    <techLevel>Industrial</techLevel>
+    <thingCategories>
+      <li>BodyPartsProsthetic</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(154,124,104)</color>
+    </graphicData>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+    </statBases>
+  </ThingDef>
+
+  <!-- <ThingDef Name="BodyPartProstheticMakeableBase" ParentName="BodyPartProstheticBase" Abstract="True"> -->
+  <ThingDef Name="GesuBodyPartProstheticMakeableBase" ParentName="GesuBodyPartProstheticBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+      <researchPrerequisite>Prosthetics</researchPrerequisite>
+    </recipeMaker>
+
+    <thingSetMakerTags>
+      <!-- <li>ImplantEmpireRoyal</li> -->
+    </thingSetMakerTags>
+    <tradeTags>
+      <li>ImplantEmpireCommon</li>
+    </tradeTags>
+    <techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <!-- <ThingDef Name="BodyPartProstheticImperialBase" ParentName="BodyPartProstheticMakeableBase" Abstract="True"> -->
+  <!-- <ThingDef Name="GesuBodyPartProstheticBase" ParentName="GesuBodyPartProstheticMakeableBase" Abstract="True"> -->
+
+</Defs>

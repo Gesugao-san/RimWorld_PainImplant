@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Pain Implant -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>PainImplant</defName>
+    <label>Pain Implant</label>
+    <labelNoun>a Pain Implant</labelNoun>
+    <description>An installed Pain Implant.</description>
+    <descriptionHyperlinks><ThingDef>PainImplant</ThingDef></descriptionHyperlinks>
+    <stages>
+      <li>
+        <!-- <painOffset>0.7</painOffset> +20% -->
+        <painFactor>1.3</painFactor> <!-- x120% -->
+      </li>
+    </stages>
+    <spawnThingOnRemoved>PainImplant</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="GesuBodyPartProstheticMakeableBase">
+    <defName>PainImplant</defName>
+    <label>Pain Implant</label>
+    <description>A brain implant which gives pain (ToDo).</description>
+    <descriptionHyperlinks><RecipeDef>InstallPainImplant</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <tradeTags>
+        <!-- orbital traders, industrial bases, industrial caravans -->
+        <li>TechHediff</li>
+        <li>ExoticMisc</li>
+    </tradeTags>
+    <techHediffsTags>
+      <!-- putting tags here allow pawns to spawn with it -->
+      <li>Advanced</li>
+    </techHediffsTags>
+    <recipeMaker>
+      <researchPrerequisite>BrainWiring</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallPainImplant</defName>
+    <label>install Pain Implant</label>
+    <description>Install a Pain Implant.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PainImplant</ThingDef>
+      <HediffDef>PainImplant</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Pain Implant.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PainImplant</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PainImplant</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PainImplant</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemovePainImplant</defName>
+    <label>remove Pain Implant</label>
+    <description>Remove the Pain Implant.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PainImplant</ThingDef>
+      <HediffDef>PainImplant</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing Pain Implant.</jobString>
+    <removesHediff>PainImplant</removesHediff>
+  </RecipeDef>
+
+</Defs>

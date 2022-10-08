@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: install Pain Implant -->
+  <InstallPainImplant.label>install Pain Implant</InstallPainImplant.label>
+  <!-- EN: Install a Pain Implant. -->
+  <InstallPainImplant.description>Install a Pain Implant.</InstallPainImplant.description>
+  <!-- EN: Installing Pain Implant. -->
+  <InstallPainImplant.jobString>Installing Pain Implant.</InstallPainImplant.jobString>
+
+  <!-- EN: remove Pain Implant -->
+  <InstallPainImplant.label>remove Pain Implant</InstallPainImplant.label>
+  <!-- EN: Remove the Pain Implant. -->
+  <InstallPainImplant.description>Remove the Pain Implant.</InstallPainImplant.description>
+  <!-- EN: Removing Pain Implant. -->
+  <InstallPainImplant.jobString>Removing Pain Implant.</InstallPainImplant.jobString>
+
+</LanguageData>

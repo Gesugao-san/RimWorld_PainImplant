@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Pain Implant -->
+  <PainImplant.label>Pain Implant</PainImplant.label>
+  <!-- EN: An installed Pain Implant. -->
+  <PainImplant.description>An installed Pain Implant.</PainImplant.description>
+  <!-- EN: a Pain Implant -->
+  <PainImplant.labelNoun>a Pain Implant</PainImplant.labelNoun>
+
+</LanguageData>

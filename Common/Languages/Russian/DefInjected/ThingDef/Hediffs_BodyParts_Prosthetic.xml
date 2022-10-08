@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Pain Implant -->
+  <PainImplant.label>болевой имплант</PainImplant.label>
+  <!-- EN: A brain implant which gives pain (ToDo). -->
+  <PainImplant.description>Мозговой имплант, причиняющий боль (ToDo).</PainImplant.description>
+
+</LanguageData>
